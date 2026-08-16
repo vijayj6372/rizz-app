@@ -340,15 +340,15 @@ export default function Home() {
           <div className="social-links">
             <a className="social-link" title="Instagram" onClick={() => showToast("Social Links — demo only")}>📷</a>
             <a className="social-link" title="TikTok" onClick={() => showToast("Social Links — demo only")}>🎵</a>
-            <a className="social-link" title="X (Twitter)" onClick={() => showToast("Social Links — demo only")}>✖</a>
+            <a className="social-link" title="X (Twitter)" href="https://x.com/Vijay_Jadav_7" target="_blank" rel="noopener noreferrer">✖</a>
             <a className="social-link" title="YouTube" onClick={() => showToast("Social Links — demo only")}>▶</a>
           </div>
 
           <div className="footer-links">
-            <a className="footer-link" onClick={() => showToast("Footer Links — demo only")}>Support</a>
-            <a className="footer-link" onClick={() => showToast("Footer Links — demo only")}>Terms</a>
-            <a className="footer-link" onClick={() => showToast("Footer Links — demo only")}>Privacy</a>
-            <a className="footer-link" href="https://www.rizzai.space/contact">Contact</a>
+            <Link href="/about" className="footer-link">About</Link>
+            <Link href="/terms" className="footer-link">Terms</Link>
+            <Link href="/privacy" className="footer-link">Privacy</Link>
+            <Link href="/contact" className="footer-link">Contact</Link>
           </div>
 
           <p className="footer-copyright">
