@@ -1063,3 +1063,35 @@ body {
 .quiz-next-btn:hover { box-shadow: 0 4px 30px rgba(196,181,253,0.2); transform: translateY(-1px); }
 .quiz-next-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; box-shadow: none; }
 
+/* ===== MODALS ===== */
+.modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);
+    z-index: 1000; display: none; align-items: center; justify-content: center; padding: 24px;
+}
+.modal-overlay.active { display: flex; }
+.modal-box {
+    background: var(--bg-elevated); border: 1px solid var(--border-card); border-radius: var(--radius-xl);
+    padding: 28px; max-width: 420px; width: 100%; animation: bounceIn 0.35s ease;
+}
+.modal-title { font-family: 'DM Serif Display', Georgia, serif; font-size: 20px; margin-bottom: 8px; }
+.modal-desc { font-size: 14px; color: var(--text-muted); line-height: 1.5; margin-bottom: 20px; }
+.modal-input {
+    width: 100%; padding: 14px 16px; background: var(--bg-card); border: 1.5px solid var(--border-card);
+    border-radius: var(--radius-md); color: var(--text-white); font-family: inherit; font-size: 15px;
+    outline: none; transition: border-color 0.3s ease; margin-bottom: 20px;
+}
+.modal-input:focus { border-color: var(--accent); }
+.modal-input::placeholder { color: var(--text-dim); }
+.modal-actions { display: flex; gap: 10px; }
+.modal-btn {
+    flex: 1; padding: 12px; border-radius: var(--radius-full); font-family: inherit;
+    font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.25s ease; border: none;
+}
+.modal-btn-secondary { background: rgba(255,255,255,0.05); border: 1px solid var(--border-card); color: var(--text-muted); }
+.modal-btn-secondary:hover { background: rgba(255,255,255,0.08); color: var(--text-white); }
+.modal-btn-primary { background: var(--gradient-btn); color: #1a1a1a; }
+.modal-btn-primary:hover { box-shadow: 0 4px 20px rgba(196,181,253,0.2); }
+.modal-btn-danger { background: #ef4444; color: white; }
+.modal-btn-danger:hover { background: #dc2626; }
+
+

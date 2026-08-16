@@ -249,7 +249,7 @@ export default function QuizPage() {
             </div>
 
             {currentQuestion.isNameInput ? (
-              <div style={{ width: "100%" }}>
+              <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
                 <input
                   ref={inputRef}
                   type="text"
@@ -258,8 +258,12 @@ export default function QuizPage() {
                   onKeyDown={handleKeyDown}
                   placeholder="Enter your name..."
                   maxLength={30}
+                  spellCheck="false"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  autoCapitalize="words"
                   className="modal-input"
-                  style={{ textAlign: "center", fontSize: "18px", padding: "18px" }}
+                  style={{ textAlign: "center", fontSize: "18px", padding: "18px", maxWidth: "360px", marginBottom: "0" }}
                 />
               </div>
             ) : (
