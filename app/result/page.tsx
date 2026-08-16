@@ -197,7 +197,7 @@ export default function ResultPage() {
   const handleUnlockActionPlan = () => {
     showToast("Premium features unlocked successfully! Redirecting... 🚀");
     setTimeout(() => {
-      router.push("/");
+      window.location.href = "https://www.rizzai.space/";
     }, 1000);
   };
 
